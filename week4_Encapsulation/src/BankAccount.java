@@ -34,16 +34,24 @@ public class BankAccount {
     public void deposit(double amount) {
         if (amount > 0) {
             this.balance += amount;
-        }else{
-            System.out.println("Reset");
+        } else {
+            System.out.println();
+            System.out.println("========== >>>>           <<<< ==========");
+            System.out.println("Error !!! Plaese Enter amount NEXT TIME!!");
+            System.out.println("========== >>>>           <<<< ==========");
+            System.out.println();
         }
     }
 
     public void withdraw(double amount) {
         if (this.balance >= amount) {
             this.balance -= amount;
-        }else{
+        } else {
+            System.out.println();
+            System.out.println("========== >>>>           <<<< ==========");
             System.out.println("The amount is not enough.");
+            System.out.println("========== >>>>           <<<< ==========");
+            System.out.println();
         }
     }
 
